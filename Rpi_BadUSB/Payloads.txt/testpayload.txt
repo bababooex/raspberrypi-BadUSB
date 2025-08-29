@@ -1,7 +1,0 @@
-REM Test payload for Windows
-GUI r
-DELAY 300
-STRING notepad.exe
-ENTER
-DELAY 300
-STRING Hello World! 
