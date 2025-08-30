@@ -3,7 +3,7 @@
 #Simple Rubber Ducky script for raspberry pi
 
 # === File configuration ===
-PAYLOAD_DIR="./Payloads"
+PAYLOAD_DIR="./Payloads" # Payload directory, use .txt files
 CZ_LAYOUT="./duckpi_cz.sh" # Custom file, using fixed layout for Windows Czech QWERTZ keyboard
 US_LAYOUT="./duckpi.sh"
 # ===================================
@@ -32,7 +32,7 @@ while true; do
     whiptail --msgbox "No payload file selected.\nEnding script!" 10 50
     break
   fi
-  # --- Ask for keyboard layout (default CZ) ---
+  # Ask for keyboard layout
   LAYOUT=$(whiptail --title "Keyboard Layout" --menu "Choose keyboard layout:" 10 30 2 \
     "CZ" "Czech QWERTZ" \
     "US" "United States QWERTY" \
