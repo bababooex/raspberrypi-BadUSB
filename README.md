@@ -13,7 +13,7 @@ echo "dwc2" | sudo tee -a /etc/modules
 ```
 sudo echo "libcomposite" | sudo tee -a /etc/modules
 ```
-4. Check other configurations, like cmdline.txt, mine looks like this (I dont use g_hid, because I want to preserve otg function for external adapters etc.):
+4. Check other configurations, like cmdline.txt, mine looks like this (I dont use g_hid, because I want to preserve otg function for external adapters, etc.):
 ```
 console=serial0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait modules-load=dwc2
 ```
@@ -51,8 +51,7 @@ ls /sys/class/udc > UDC
 sudo chmod +x menu.sh
 ./menu.sh
 ```  
-Script requires root access to work with /dev/hidg0, and best of all, dwc2 driver allows you to switch between OTG mode and host mode, that is exactly what I wanted!
-Reminder: Rpi_BadUSB file needs to be put to /home/kali to work correctly, otherwise you need to change path in duckpi scripts to work! 
+Script requires root access to work with /dev/hidg0, and best of all, dwc2 driver allows you to switch between OTG mode and host mode, that is exactly what I wanted!                    Reminder: Rpi_BadUSB file needs to be put to /home/kali to work correctly, otherwise you need to change path in duckpi.sh scripts to work! 
 # Credits 
 Authors: Jeff L. Dee-oh-double-gee Theresalu Ossiozac
 Credits to Original Authors: DroidDucky by Andrej Budincevic (https://github.com/anbud/DroidDucky) hardpass by girst (https://github.com/girst/hardpass)
