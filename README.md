@@ -60,6 +60,7 @@ Credits to Original Authors: DroidDucky by Andrej Budincevic (https://github.com
 - https://github.com/ossiozac/Raspberry-Pi-Zero-Rubber-Ducky-Duckberry-Pi - Inspiration to make this
 - https://www-users.york.ac.uk/~mjf5/bad_pi/index.html - Also good website to config rpi pi for HID
 - https://randomnerdtutorials.com/raspberry-pi-zero-usb-keyboard-hid/ - Isticktoit HID config
+- https://github.com/darrylburke/RaspberryPiZero_HID_MultiTool/tree/master - Scripts for HID setup
 # TO DO
 - Make script better visually
 - Maybe add bluetooth support
