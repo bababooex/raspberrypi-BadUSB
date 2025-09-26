@@ -46,11 +46,16 @@ ln -s functions/hid.usb0 configs/c.1/
 
 ls /sys/class/udc > UDC
 ```
-6. Finally, to use the script, make it executable with chmod and then simply run it with bash:
+6. Finally, to use the script, clone my repository and navigate to it:
+```
+git clone https://github.com/bababooex/raspberrypi-tv-b-gone.git
+cd raspberrypi-tv-b-gone
+```
+To use the main script, make it executable with chmod and then simply run it with bash:
 ```
 sudo chmod +x menu.sh
 ./menu.sh
-```  
+```
 Script requires root access to work with /dev/hidg0, and best of all, dwc2 driver allows you to switch between OTG mode and host mode, that is exactly what I wanted!                    Reminder: Rpi_BadUSB file needs to be put to /home/kali to work correctly, otherwise you need to change path in duckpi.sh scripts to work! 
 # Credits 
 Authors: Jeff L. Dee-oh-double-gee Theresalu Ossiozac
