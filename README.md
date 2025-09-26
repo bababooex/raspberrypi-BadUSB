@@ -51,7 +51,7 @@ ls /sys/class/udc > UDC
 git clone https://github.com/bababooex/raspberrypi-tv-b-gone.git
 cd raspberrypi-tv-b-gone
 ```
-To use the main script, make it executable with chmod and then simply run it with bash:
+   To use the main script, make it executable with chmod and then simply run it with bash:
 ```
 sudo chmod +x menu.sh
 ./menu.sh
