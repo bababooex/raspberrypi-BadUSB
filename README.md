@@ -48,8 +48,8 @@ ls /sys/class/udc > UDC
 ```
 6. Finally, to use the script, clone my repository and navigate to it:
 ```
-git clone https://github.com/bababooex/raspberrypi-tv-b-gone.git
-cd raspberrypi-tv-b-gone
+git clone https://github.com/bababooex/raspberrypi-BadUSB.git
+cd ./raspberrypi-BadUSB/Rpi_BadUSB
 ```
    To use the main script, make it executable with chmod and then simply run it with bash:
 ```
